@@ -1,0 +1,61 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/colors' as *;
+
+.hero {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    &__image {
+        width: 50%;
+        align-self: stretch
+    }
+    &__text {
+        width: 40%;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    &__name{
+        @include header;
+    }
+    &__tag {
+        @include header;
+    }
+    &__moto {
+        @include header;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+.react-tabs {
+    &__tab-list {
+        display: flex;
+    }
+    .tabs {
+        display: flex;
+    }
+    &__tab {
+        width: 30%;
+        list-style: none;
+        cursor: pointer;
+        &--selected {
+            background: $TextColor;
+            color: $MainBackground;
+            outline: none;
+        }
+        &:focus {
+            outline: none;
+            &:after {
+            content: "";
+            }
+        }
+    }
+
+    &__tab-panel {
+    display: flex;
+    &--selected {
+    }
+    }
+}

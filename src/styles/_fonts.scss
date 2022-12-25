@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf) format("ttf");
+    font-weight: 400;
+}
+
+
+@mixin header {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+
+}
