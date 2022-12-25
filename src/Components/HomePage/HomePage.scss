@@ -15,7 +15,8 @@
         margin: 0.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between
+        justify-content: space-between;
+        color: $TextColor;
     }
     &__name{
         @include header;
@@ -29,33 +30,70 @@
         font-weight: 500;
     }
 }
+
 .react-tabs {
     &__tab-list {
         display: flex;
     }
-    .tabs {
-        display: flex;
-    }
     &__tab {
-        width: 30%;
+        width: 33.33%;
         list-style: none;
+        padding: 0.5rem;
+        @include header;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
         cursor: pointer;
-        &--selected {
-            background: $TextColor;
-            color: $MainBackground;
-            outline: none;
-        }
-        &:focus {
-            outline: none;
-            &:after {
-            content: "";
-            }
-        }
-    }
-
-    &__tab-panel {
-    display: flex;
+        border-bottom: none;
     &--selected {
+        background: $TextColor;
+        color: $MainBackground;
     }
+    &:focus {
+        outline: none;
+    &:after {
+        content: "";
+        background: #fff;
+        }
+    }
+    }
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    gap: 2rem;
+    background-color: $TextColor;
+    &__portrait { 
+        margin-left: auto;
+        width: 90%;
+        box-shadow: -1.875rem 3rem $MainBackground;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width:50%;
+    }
+    &__right {
+        width: 50%;
+        padding: 1rem;
+        background-color: $TextColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    &__heading {
+        @include header;
+        font-size: 1.5rem;
+        color: white;
+        background-color: $TextColor;
+    }
+    &__title {
+        @include header;
+        font-size: 1rem;
+        color: white;
+        background-color: $TextColor;
     }
 }

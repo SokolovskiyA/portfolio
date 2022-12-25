@@ -1,7 +1,10 @@
 import React from 'react'
 import hero from '../../assets/images/hero.jpeg'
+import portrait from '../../assets/images/portrait.jpeg'
+import restaurant from '../../assets/images/restaurant.jpeg'
 import './HomePage.scss'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tab, TabPanel, Tabs, TabList } from 'react-tabs'
+
 function HomePage() {
     return (
         <div>
@@ -19,33 +22,26 @@ function HomePage() {
             </section>
             <section>
             <Tabs direction={'rtl'}>
-                <TabList className='tabs'>
-                    <Tab className='tabs__tab'>about</Tab>
-                    <Tab className='tabs__tab'>my work</Tab>
-                    <Tab className='tabs__tab'>contacts</Tab>
+                <TabList>
+                    <Tab>About</Tab>
+                    <Tab>my work</Tab>
+                    <Tab>contacts</Tab>
                 </TabList>
                 <TabPanel>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                    <p></p>
+                    <div className='about'>
+                        <div className='about__left'>
+                            <img className="about__portrait" src={portrait} alt="portrait"/>
+                        </div>
+                        <div className='about__right'>
+                            <h1 className="about__heading">About Me</h1>
+                            <p className="about__title">"every new beginning comes from some other beginnings end"</p>
+                            <img src={restaurant} alt="restaurant"/>
+                        </div>
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    <p>
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
-                    </p>
                 </TabPanel>
                 <TabPanel>
-                    <p>
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
-                    </p>
-                </TabPanel>
-                <TabPanel>
-                    <h4>תת כותרת</h4>
-                    <p>
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
-                    </p>
                 </TabPanel>
                 </Tabs>
             </section>
