@@ -4,6 +4,7 @@ import portrait from '../../assets/images/portrait.jpeg'
 import restaurant from '../../assets/images/restaurant.jpeg'
 import './HomePage.scss'
 import { Tab, TabPanel, Tabs, TabList } from 'react-tabs'
+import ContactsPage from '../ContactsPage/ContactsPage'
 
 function HomePage() {
     return (
@@ -42,6 +43,7 @@ function HomePage() {
                 <TabPanel>
                 </TabPanel>
                 <TabPanel>
+                    <ContactsPage/>
                 </TabPanel>
                 </Tabs>
             </section>
