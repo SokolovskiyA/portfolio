@@ -7,6 +7,7 @@ import { Tab, TabPanel, Tabs, TabList } from 'react-tabs'
 import ContactsPage from '../ContactsPage/ContactsPage'
 
 function HomePage() {
+
     return (
         <div>
             <section className='hero'>
@@ -31,11 +32,12 @@ function HomePage() {
                     <div className='about'>
                         <div className='about__left'>
                             <img className="about__portrait" src={portrait} alt="portrait"/>
-                            <p>Hello. My name is Alexander Sokolovskiy. Im a junior web developer</p>
+                            <p className='about__left-text'>Hello and welcome to my story of great transformation and finding a new and amazing hobbie that changed my life.</p>
+                            <p className='about__left-text'>I started my professional life in service industry. For more then 10 years restaurants has been my work and passion. However, I`ve always </p>
                         </div>
                         <div className='about__right'>
                             <h1 className="about__heading">About Me</h1>
-                            <p className="about__title">"every new beginning comes from some other beginnings end"</p>
+                            <p className="about__title">"I try to influence life of many people by creating meaningfull and usefull technologies"</p>
                             <img src={restaurant} alt="restaurant"/>
                         </div>
                     </div>

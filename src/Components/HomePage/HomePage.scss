@@ -69,11 +69,18 @@
         margin-left: auto;
         width: 90%;
         box-shadow: -1.875rem 3rem $MainBackground;
+        margin-bottom: 5rem;
     }
     &__left {
         display: flex;
         flex-direction: column;
         width:50%;
+    }
+    &__left-text {
+        @include header;
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 1rem;
     }
     &__right {
         width: 50%;
@@ -92,7 +99,7 @@
     }
     &__title {
         @include header;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: white;
         background-color: $TextColor;
     }

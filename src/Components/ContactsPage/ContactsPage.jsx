@@ -1,20 +1,60 @@
-import React from 'react'
 import './ContactsPage.scss'
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+import 'animate.css';
+
+
 function ContactsPage() {
+    const form = useRef();
+    const [ name , setName ] = useState("")
+    const [ email, setEmail] = useState("")
+    const [ phone, setPhone ] = useState("")
+    const [ message, setMessage] = useState("")
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+    if ( name === "" || email === "" || phone === "" || message === "") {
+        Swal.fire({
+            title: 'Please fill out the form',
+            customClass: {
+                title: 'swal_title',
+                confirmButton: 'swal_button',
+            },
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        })
+    }
+    else {
+        emailjs.sendForm("service_976g7bq","template_ao9ibjb", form.current, 'nKy-Xq3HycHCwHSXx')
+        .then((result) => {
+            setName('');
+            setEmail('');
+            setMessage("");
+            setPhone("");
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+    }
+    
+
     return (
         <div className="contact">
             <h1 className='contact__heading'>contact me</h1>
-            <form className='contact__form'>
+            <form ref={form} onSubmit={sendEmail} className='contact__form'>
                 <label className="contact__label" >tell me who you are</label>
-                <input className='contact__input' type="text" placeholder='ypur name'/>
+                <input value={name} onChange={(e) => setName(e.target.value)} name="from_name"  className='contact__input' type="text" placeholder='your name'/>
                 <label className="contact__label">how can i get back to you</label>
-                <input className='contact__input' type="email" placeholder='your email'/>
-                <input className='contact__input' type="tel" name="phone"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required placeholder='your phone number'/>
+                <input value={email} onChange={(e) => setEmail(e.target.value)} name="from_email"  className='contact__input' type="email" placeholder='your email'/>
+                <input value={phone} onChange={(e) => setPhone(e.target.value)} name="from_phone"  className='contact__input' type="tel" placeholder='your phone number'/>
                 <label className="contact__label">What problem I can help you with?</label>
-                <textarea className='contact__input' rows="5" cols="50" placeholder='your message'/>
-                <button type="submit" className="contact__button">DO IT!</button>
+                <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message"  className='contact__input' rows="5" cols="50" placeholder='your message'/>
+                <button type="submit" value="send" className="contact__button">DO IT!</button>
             </form>
         </div>
     )
