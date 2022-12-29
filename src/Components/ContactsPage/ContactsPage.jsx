@@ -1,9 +1,8 @@
 import './ContactsPage.scss'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2'
 import 'animate.css';
-
+import Popup from '../Popup/Popup';
 
 function ContactsPage() {
     const form = useRef();
@@ -11,23 +10,16 @@ function ContactsPage() {
     const [ email, setEmail] = useState("")
     const [ phone, setPhone ] = useState("")
     const [ message, setMessage] = useState("")
+    const [ popup, setPopup ] = useState(false)
+    
+    const closePopup = () =>{
+        setPopup(false)
+    }
 
     const sendEmail = (e) => {
     e.preventDefault();
     if ( name === "" || email === "" || phone === "" || message === "") {
-        Swal.fire({
-            title: 'Please fill out the form',
-            customClass: {
-                title: 'swal_title',
-                confirmButton: 'swal_button',
-            },
-            showClass: {
-                popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
-                popup: 'animate__animated animate__fadeOutUp'
-            }
-        })
+        setPopup(true)
     }
     else {
         emailjs.sendForm("service_976g7bq","template_ao9ibjb", form.current, 'nKy-Xq3HycHCwHSXx')
@@ -46,6 +38,7 @@ function ContactsPage() {
     return (
         <div className="contact">
             <h1 className='contact__heading'>contact me</h1>
+            { popup === true && <Popup click={closePopup} /> }
             <form ref={form} onSubmit={sendEmail} className='contact__form'>
                 <label className="contact__label" >tell me who you are</label>
                 <input value={name} onChange={(e) => setName(e.target.value)} name="from_name"  className='contact__input' type="text" placeholder='your name'/>

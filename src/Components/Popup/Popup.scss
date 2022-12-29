@@ -1,0 +1,38 @@
+@use '../../styles/colors' as *;
+@use '../../styles/fonts' as *;
+
+.popup-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(35,37,47, 85%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup {
+    background-color: $MainBackground;
+    opacity: 100%;
+    width: 90%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    &__text {
+        @include header;
+        color: $TextColor;
+        font-size: 1.2rem;
+    }
+    &__button {
+        width: 12.5rem;
+        height: 2.5rem;
+        @include header;
+        color: white;
+        background-color: $TextColor;
+        border: none;
+    }
+}

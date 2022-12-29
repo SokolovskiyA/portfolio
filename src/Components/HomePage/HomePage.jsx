@@ -5,6 +5,7 @@ import restaurant from '../../assets/images/restaurant.jpeg'
 import './HomePage.scss'
 import { Tab, TabPanel, Tabs, TabList } from 'react-tabs'
 import ContactsPage from '../ContactsPage/ContactsPage'
+import MyWorkPage from '../MyWorkPage/MyWorkPage'
 
 function HomePage() {
 
@@ -43,6 +44,7 @@ function HomePage() {
                     </div>
                 </TabPanel>
                 <TabPanel>
+                    <MyWorkPage />
                 </TabPanel>
                 <TabPanel>
                     <ContactsPage/>
