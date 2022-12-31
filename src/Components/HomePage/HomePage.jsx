@@ -6,6 +6,11 @@ import './HomePage.scss'
 import { Tab, TabPanel, Tabs, TabList } from 'react-tabs'
 import ContactsPage from '../ContactsPage/ContactsPage'
 import MyWorkPage from '../MyWorkPage/MyWorkPage'
+import css from '../../assets/images/CSS.jpeg'
+import html from '../../assets/images/HTML.jpeg'
+import brainstation from '../../assets/images/brainstation.jpeg'
+import group from '../../assets/images/group.jpeg'
+
 
 function HomePage() {
 
@@ -15,8 +20,7 @@ function HomePage() {
                 <img className='hero__image' src={hero} alt='hero'/>
                 <div className='hero__text'>  
                     <div className='hero__name'>
-                        <h1>Alex</h1>
-                        <h1>Sokolovskiy</h1>
+                        <h1>Alex Sokolovskiy</h1>
                     </div>
                     <p className='hero__moto'>...help people surf the web</p>
                     <h1 className='hero__tag'>web developer</h1>
@@ -50,10 +54,10 @@ function HomePage() {
                             </p>
                         </div>
                         <div className='education'>
-                            <img/>
-                            <img/>
-                            <img/>
-                            <img/>
+                            <img className="education__credentials" src={css} alt="credentials"/>
+                            <img className="education__credentials" src={html} alt="credentials"/>
+                            <img className="education__credentials" src={brainstation} alt="credentials"/>
+                            <img className="education__credentials" src={group} alt="credentials"/>
                         </div>
                     </div>
                 </TabPanel>
