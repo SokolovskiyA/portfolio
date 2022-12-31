@@ -60,30 +60,33 @@
 }
 .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     padding: 3rem 1rem;
     gap: 2rem;
     background-color: $TextColor;
     &__portrait { 
-        margin-left: auto;
-        width: 90%;
-        box-shadow: -1.875rem 3rem $MainBackground;
-        margin-bottom: 5rem;
+        margin: auto;
+        width: 80%;
+        box-shadow: -2rem 4rem $MainBackground;
+        margin-bottom: 6rem;
     }
     &__left {
         display: flex;
         flex-direction: column;
-        width:50%;
+        width:47%;
     }
-    &__left-text {
+    &__text {
         @include header;
         color: white;
         font-size: 1.2rem;
-        margin-left: 1rem;
+    }
+    &__text-bottom {
+        text-align: center;
     }
     &__right {
-        width: 50%;
+        width: 47%;
         padding: 1rem;
         background-color: $TextColor;
         display: flex;
@@ -102,5 +105,9 @@
         font-size: 1.2rem;
         color: white;
         background-color: $TextColor;
+    }
+    &__restaurant {
+        width: 90%;
+        margin:auto
     }
 }

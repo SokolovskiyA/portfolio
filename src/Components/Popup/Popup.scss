@@ -1,5 +1,7 @@
 @use '../../styles/colors' as *;
 @use '../../styles/fonts' as *;
+ //popup: 'animate__animated animate__fadeInDown'
+    //popup: 'animate__animated animate__fadeOutUp'
 
 .popup-container {
     position: absolute;
@@ -15,7 +17,7 @@
 .popup {
     background-color: $MainBackground;
     opacity: 100%;
-    width: 90%;
+    width: 60%;
     height: 20rem;
     display: flex;
     flex-direction: column;
