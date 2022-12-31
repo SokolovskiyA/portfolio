@@ -105,9 +105,15 @@
         margin-bottom: 6rem;
     }
     &__left {
+        order:-1;
         display: flex;
         flex-direction: column;
-        width:47%;
+        width:100%;
+        text-align: center;
+        @include tablet {
+            width: 47%;
+            padding: 1rem;
+        }
     }
     &__text {
         @include header;
@@ -115,18 +121,22 @@
         font-size: 1.2rem;
     }
     &__text-bottom {
+        order:0;
         text-align: center;
         padding: 0 1rem;
     }
     &__right {
+        order: -2;
         background-color: $TextColor;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 3rem;
+        text-align: center;
         @include tablet {
             width: 47%;
             padding: 1rem;
+            
         }
     }
     &__heading {
