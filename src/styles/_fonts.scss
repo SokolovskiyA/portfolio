@@ -29,3 +29,8 @@
     font-size: 1rem;
     font-weight: 600;
 }
+@mixin plain-text {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    line-height: 2rem;
+}

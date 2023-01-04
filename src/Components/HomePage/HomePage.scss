@@ -95,48 +95,60 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 1rem;
     gap: 2rem;
     background-color: $TextColor;
+    &__highlighted {
+        font-weight: 600;
+    }
     &__portrait { 
         margin: auto;
-        width: 80%;
-        box-shadow: -2rem 4rem $MainBackground;
-        margin-bottom: 6rem;
-    }
-    &__left {
-        order:-1;
-        display: flex;
-        flex-direction: column;
-        width:100%;
-        text-align: center;
+        width: 90%;
+        border: 0.5rem solid $MainBackground;
+        margin-bottom: 2rem;
         @include tablet {
-            width: 47%;
-            padding: 1rem;
+            width: 80%;
+            border: none;
+            box-shadow: -2rem 4rem $MainBackground;
+            margin-bottom: 6rem;
         }
     }
+    &__left {
+        display: flex;
+        flex-direction: column-reverse;
+        width:100%;
+        order: -1;
+        @include tablet {
+            flex-direction: column;
+            width: 47%;
+            padding: 1rem;
+            order:-2;
+        }
+    }
+    &__text-left {
+        margin-bottom: 1.5rem;
+    }
     &__text {
-        @include header;
+        @include plain-text;
         color: white;
-        font-size: 1.2rem;
+        padding:0 1rem;
     }
     &__text-bottom {
+        @include plain-text;
         order:0;
-        text-align: center;
-        padding: 0 1rem;
+        padding:0 1rem;
     }
     &__right {
-        order: -2;
         background-color: $TextColor;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 3rem;
-        text-align: center;
+        gap: 1rem;
+        order: -2;
         @include tablet {
             width: 47%;
             padding: 1rem;
-            
+            order: -1;
         }
     }
     &__heading {
@@ -144,6 +156,7 @@
         font-size: 1.5rem;
         color: white;
         background-color: $TextColor;
+        text-align: center
     }
     &__title {
         @include header;
@@ -153,17 +166,30 @@
     }
     &__restaurant {
         width: 90%;
-        margin:auto
+        margin:auto;
+        border: 0.5rem solid $MainBackground;
     }
     
 }
-
 .education {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0.5em;
     padding: 1rem;
     &__credentials {
-        width: 20%;
+        width: 48%;
+        @include tablet {
+            width: 22%;
+        }
+    }
+}
+.stack {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    &__heading {
+        @extend .about__heading;
     }
 }
