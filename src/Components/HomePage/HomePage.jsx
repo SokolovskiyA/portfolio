@@ -10,7 +10,6 @@ import css from '../../assets/images/CSS.jpeg'
 import html from '../../assets/images/HTML.jpeg'
 import brainstation from '../../assets/images/brainstation.jpeg'
 import group from '../../assets/images/group.jpeg'
-import PicturePopup from '../PicturePopup/PicturePopup'
 
 function HomePage() {
 
@@ -62,7 +61,7 @@ function HomePage() {
                         <div className='stack'>
                             <h2 className="stack__heading">What I use to build:</h2>
                             <div className="stack__icons">
-                                <img />
+                               
                             </div>
                         </div>
                     </div>
