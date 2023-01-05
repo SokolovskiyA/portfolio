@@ -1,15 +1,55 @@
 import React from 'react'
-
+import pos from '../../assets/projects/PocketPos.mov'
+import './MyWorkPage.scss'
 function MyWorkPage() {
     return (
-        <div className='contact'>
-            <h1>PocketPOS</h1>
-            <div>
-                <img src="" alt="pocket POS"/>
-                <img src="" alt="pocket POS"/>
-                <img src="" alt="pocket POS"/>
+        <div className='projects'>
+            <h1 className='projects__heading'>my projects</h1>
+            <div className='project'>
+                <video className='project__video' controls src={pos} autoPlay muted/>
+                <div className='project__description'>
+                    <h3 className='project__name'>Pocket - POS</h3>
+                    <p className='project__text'>Full-Stack</p>
+                    <p className='project__text'>Mobile POS systaem that allows restaurant service professionals to keep track of orders, their personal sales and gratuity amounts</p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / MySQL / axios</p>
+                </div>
             </div>
-            <p>Mobile POS systaem that allows restaurant service professionals to keep track of orders, their personal sales and gratuity amounts</p>
+            <div className='project'>
+                <video className='project__video' controls src={pos} autoPlay muted/>
+                <div className='project__description'>
+                    <h3 className='project__name'>Pocket - POS</h3>
+                    <p className='project__text'>Full-Stack</p>
+                    <p className='project__text'>Mobile POS systaem that allows restaurant service professionals to keep track of orders, their personal sales and gratuity amounts</p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / MySQL / axios</p>
+                </div>
+            </div>
+            <div className='project'>
+                <video className='project__video' controls src={pos} autoPlay muted/>
+                <div className='project__description'>
+                    <h3 className='project__name'>Pocket - POS</h3>
+                    <p className='project__text'>Full-Stack</p>
+                    <p className='project__text'>Mobile POS systaem that allows restaurant service professionals to keep track of orders, their personal sales and gratuity amounts</p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / MySQL / axios</p>
+                </div>
+            </div>
+            <div className='project'>
+                <video className='project__video' controls src={pos} autoPlay muted/>
+                <div className='project__description'>
+                    <h3 className='project__name'>Pocket - POS</h3>
+                    <p className='project__text'>Full-Stack</p>
+                    <p className='project__text'>Mobile POS systaem that allows restaurant service professionals to keep track of orders, their personal sales and gratuity amounts</p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / MySQL / axios</p>
+                </div>
+            </div>
+            <div className='project'>
+                <video className='project__video' controls src={pos} autoPlay muted/>
+                <div className='project__description'>
+                    <h3 className='project__name'>Pocket - POS</h3>
+                    <p className='project__text'>Full-Stack</p>
+                    <p className='project__text'>Mobile POS systaem that allows restaurant service professionals to keep track of orders, their personal sales and gratuity amounts</p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / MySQL / axios</p>
+                </div>
+            </div>
         </div>
     )
 }
