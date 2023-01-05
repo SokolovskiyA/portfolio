@@ -10,6 +10,19 @@ import css from '../../assets/images/CSS.jpeg'
 import html from '../../assets/images/HTML.jpeg'
 import brainstation from '../../assets/images/brainstation.jpeg'
 import group from '../../assets/images/group.jpeg'
+import SocialSection from '../SocialSection/SocialSection'
+import htmlLogo from '../../assets/skills-logo/html.png'
+import cssLogo from '../../assets/skills-logo/css.png'
+import js from '../../assets/skills-logo/javascript.png'
+import sass from '../../assets/skills-logo/sass.png'
+import express from '../../assets/skills-logo/expressjs.png'
+import axios from '../../assets/skills-logo/axios.png'
+import node from '../../assets/skills-logo/nodejs.png'
+import react from '../../assets/skills-logo/react.png'
+
+
+
+
 
 function HomePage() {
 
@@ -59,9 +72,16 @@ function HomePage() {
                             <img className="education__credentials" src={brainstation} alt="credentials"/>
                         </div>
                         <div className='stack'>
-                            <h2 className="stack__heading">What I use to build:</h2>
+                            <h2 className="stack__heading">What I use to build</h2>
                             <div className="stack__icons">
-                               
+                                <img className="stack__logo" src={htmlLogo} alt="technology"/>
+                                <img className="stack__logo" src={cssLogo} alt="technology"/>
+                                <img className="stack__logo" src={js} alt="technology"/>
+                                <img className="stack__logo" src={sass} alt="technology"/>
+                                <img className="stack__logo" src={react} alt="technology"/>
+                                <img className="stack__logo" src={node} alt="technology"/>
+                                <img className="stack__logo" src={express} alt="technology"/>
+                                <img className="stack__logo" src={axios} alt="technology"/>
                             </div>
                         </div>
                     </div>
@@ -74,6 +94,7 @@ function HomePage() {
                 </TabPanel>
                 </Tabs>
             </section>
+            <SocialSection />
         </div>
     )
 }
