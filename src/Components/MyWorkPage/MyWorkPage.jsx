@@ -1,6 +1,8 @@
 import React from 'react'
 import pos from '../../assets/projects/PocketPos.gif'
 import './MyWorkPage.scss'
+
+
 function MyWorkPage() {
     return (
         <div className='projects'>
@@ -15,7 +17,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <video className='project__video' controls src={pos} autoPlay muted/>
+                <img className='project__video' src={pos}/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -24,7 +26,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <video className='project__video' controls src={pos} autoPlay muted/>
+                <img className='project__video' src={pos}/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -33,7 +35,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <video className='project__video' controls src={pos} autoPlay muted/>
+                <img className='project__video' src={pos}/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -42,7 +44,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <video className='project__video' controls src={pos} autoPlay muted/>
+                <img className='project__video' src={pos}/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
