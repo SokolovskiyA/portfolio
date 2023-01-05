@@ -8,7 +8,7 @@ function MyWorkPage() {
         <div className='projects'>
             <h1 className='projects__heading'>my projects</h1>
             <div className='project'>
-                <img className='project__video' src={pos}/>
+                <img className='project__video' src={pos} alt="project-gif"/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -17,7 +17,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <img className='project__video' src={pos}/>
+                <img className='project__video' src={pos} alt="project-gif"/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -26,7 +26,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <img className='project__video' src={pos}/>
+                <img className='project__video' src={pos} alt="project-gif"/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -35,7 +35,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <img className='project__video' src={pos}/>
+                <img className='project__video' src={pos} alt="project-gif"/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
@@ -44,7 +44,7 @@ function MyWorkPage() {
                 </div>
             </div>
             <div className='project'>
-                <img className='project__video' src={pos}/>
+                <img className='project__video' src={pos} alt="project-gif"/>
                 <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
