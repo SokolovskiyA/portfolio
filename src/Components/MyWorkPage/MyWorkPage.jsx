@@ -30,7 +30,7 @@ function MyWorkPage() {
                 <div className='project__description'>
                     <h3 className='project__name'>BrainFlix</h3>
                     <p className='project__text'>Full-Stack</p>
-                    <p className='project__text'>A prototype for a new video streaming platform called BrainFlix. Website createb according to mockup provided by designer. Functionality to add new video and comment manipulation created according to technical specification for the project proided by BrainStation. </p>
+                    <p className='project__text'>A prototype for a new video streaming platform called BrainFlix. Website created according to mockup provided by designer. Functionality to add new video and comment manipulation created according to technical specification for the project proided by BrainStation. </p>
                     <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / axios</p>
                     <div className='project__git-box'>
                         <a className='project__git-link' href="https://github.com/SokolovskiyA/BrainFlix"><img className='project__git' alt="git-hub" src={git}/><p>Front-End Repository</p></a>
@@ -60,7 +60,7 @@ function MyWorkPage() {
                     <h3 className='project__name'>Industry Project</h3>
                     <p className='project__text'>Sponsored by Bench Accounting</p>
                     <p className='project__text'>Working in a team of professionals from different departments (Web Design, Data Analysis, Web Development) come up with a solution for a problem provided by Bench Accounting. Final task is to Improve Bench's client sign-up flow to increase conversions for monthly bookkeeping.</p>
-                    <p className='project__text'>Our solution took a path of bringing final product of the company closer to a consumer by making it easily accesable for demo within 1 click on a company website, as well as make the demonstration more interractive</p>
+                    <p className='project__text'>Our solution took a path of bringing final product of the company closer to the consumer by making it easily accesable for demo within 1 click on a company website, as well as make demonstration more interractive</p>
                     <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS </p>
                     <div className='project__git-box'>
                         <a className='project__git-link' href="https://github.com/SokolovskiyA/industry-project-bench"><img className='project__git' alt="git-hub" src={git}/><p>Project Repository</p></a>

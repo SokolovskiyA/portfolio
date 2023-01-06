@@ -60,6 +60,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        @include plain-text;
     }
     &__git {
         width: 1.5rem;
@@ -68,8 +69,6 @@
 .industry {
     display: flex;
     flex-direction: column;
-    @include tablet {
-    }
     &__video {
         width:100%;
         height: auto;
