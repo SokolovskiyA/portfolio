@@ -7,6 +7,7 @@
     width: 100%;
     background-color: $TextColor;
     color: white;
+    padding: 2rem 0;
     @include tablet {
         padding: 2rem;
     }
@@ -45,5 +46,32 @@
     }
     &__text {
         @include plain-text;
+    }
+    &__git-box {
+        display: flex;
+        flex-direction: column;
+    }
+    &__git-link {
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__git {
+        width: 1.5rem;
+    }
+}
+.industry {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+    }
+    &__video {
+        width:100%;
+        height: auto;
     }
 }
