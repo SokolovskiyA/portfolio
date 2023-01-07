@@ -16,7 +16,7 @@ function SocialSection() {
                 <a href="https://github.com/SokolovskiyA" ><img className="social__icon" src={github} alt="github"/></a>
             </section>
             <div className="contacts">
-                <p className="contacts__text">sokolovskiya12@gmail.com</p>
+                <a className="contacts__link" href="mailto:sokolovskiya12@gmail.com?&subject=Website%20Email%20Link&body=Hello%20Alex!%20Can%20you%20help%20me%20with%20" target="_top">sokolovskiya12@gmail.com</a>
                 <p className="contacts__text">+1.604.715.1901</p>
             </div>
         </div>

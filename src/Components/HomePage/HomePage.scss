@@ -113,18 +113,7 @@
             margin-bottom: 6rem;
         }
     }
-    &__left {
-        display: flex;
-        flex-direction: column-reverse;
-        width:100%;
-        order: -1;
-        @include tablet {
-            flex-direction: column;
-            width: 47%;
-            padding: 1rem;
-            order:-2;
-        }
-    }
+    
     &__text-left {
         margin-bottom: 1.5rem;
     }
@@ -135,20 +124,37 @@
     }
     &__text-bottom {
         @include plain-text;
-        order:0;
+        order: 3;
         padding:0 1rem;
+        text-align: center;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column-reverse;
+        width:100%;
+        order:-1;
+        text-align: center;
+        @include tablet {
+            flex-direction: column;
+            width: 47%;
+            padding: 1rem;
+            order: -1;
+            text-align: center;
+        }
     }
     &__right {
         background-color: $TextColor;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 1rem;
-        order: -2;
+        gap: 2rem;
+        order:-2;
+        text-align: center;
         @include tablet {
             width: 47%;
             padding: 1rem;
-            order: -1;
+            order: -2;
+            text-align: center
         }
     }
     &__heading {

@@ -26,10 +26,22 @@
 .contacts {
     background-color: $TextColor;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
     &__text {
         @include header;
         font-size: 1.5rem;
-        padding: 0.5rem;
+        color: white;
         text-align: center;
+    }
+    &__link {
+        @include header;
+        font-size: 1.5rem;
+        color: white;
+        margin: auto;
     }
 }
