@@ -7,20 +7,22 @@ import bandsite from '../../assets/projects/bandsite.gif'
 import bench from '../../assets/projects/bench.gif'
 import benchD from '../../assets/images/group.jpeg'
 import instock from '../../assets/projects/instock.gif'
+import web from '../../assets/images/web.png'
+import subvert from '../../assets/images/subvert.png'
 
 function MyWorkPage() {
     return (
         <div className='projects'>
             <h1 className='projects__heading'>my projects</h1>
             <div className='project'>
-                <img className='project__video' src={pos} alt="project-gif"/>
+                <img className='project__video' src={subvert} alt="project-gif"/>
                 <div className='project__description'>
                     <h3 className='project__name'>The Subvert Podcast</h3>
                     <p className='project__text'>Full-Stack</p>
-                    <p className='project__text'></p>
-                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / Axios / Framer </p>
+                    <p className='project__text'>Developed a platform in React.JS for hosts to share their unique narratives and integrated multiple API`s into the framework, giving podcasters the opportunity to showcase their merchendise on dedicated shop page.</p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / Axios / Framer Motion </p>
                     <div className='project__git-box'>
-                        <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Project showcase</p></a>
+                        <a className='project__git-link' href="https://app.netlify.com/sites/clinquant-tulumba-64a70a/overview"><img className='project__git' alt="git-hub" src={web}/><p>Project showcase</p></a>
                         <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Front-End Repository</p></a>
                         <a className='project__git-link' href="https://github.com/SokolovskiyA/pocket_pos_backend"><img className='project__git' alt="git-hub" src={git}/><p>Back-End Repository</p></a>
                     </div>
