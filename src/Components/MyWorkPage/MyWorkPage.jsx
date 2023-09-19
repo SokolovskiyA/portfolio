@@ -20,7 +20,7 @@ function MyWorkPage() {
                     <p className='project__text'></p>
                     <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / Axios / Framer </p>
                     <div className='project__git-box'>
-                        <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Front-End Repository</p></a>
+                        <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Project showcase</p></a>
                         <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Front-End Repository</p></a>
                         <a className='project__git-link' href="https://github.com/SokolovskiyA/pocket_pos_backend"><img className='project__git' alt="git-hub" src={git}/><p>Back-End Repository</p></a>
                     </div>
