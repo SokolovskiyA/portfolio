@@ -15,6 +15,20 @@ function MyWorkPage() {
             <div className='project'>
                 <img className='project__video' src={pos} alt="project-gif"/>
                 <div className='project__description'>
+                    <h3 className='project__name'>The Subvert Podcast</h3>
+                    <p className='project__text'>Full-Stack</p>
+                    <p className='project__text'></p>
+                    <p className='project__text'> HTML / CSS / JavaScript / ReactJS / NodeJS / ExpressJS / Axios / Framer </p>
+                    <div className='project__git-box'>
+                        <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Front-End Repository</p></a>
+                        <a className='project__git-link' href="https://github.com/SokolovskiyA/PocketPOS_capstone"><img className='project__git' alt="git-hub" src={git}/><p>Front-End Repository</p></a>
+                        <a className='project__git-link' href="https://github.com/SokolovskiyA/pocket_pos_backend"><img className='project__git' alt="git-hub" src={git}/><p>Back-End Repository</p></a>
+                    </div>
+                </div>
+            </div>
+            <div className='project'>
+                <img className='project__video' src={pos} alt="project-gif"/>
+                <div className='project__description'>
                     <h3 className='project__name'>Pocket - POS</h3>
                     <p className='project__text'>Full-Stack</p>
                     <p className='project__text'>PocketPOS is a web application for front of house workers of service industry to keep track of their gratuity earnings, total sales and tip-outs. As well as providing all required functionality to have POS system available on the chosen device to organize order taking and shift organization.</p>
